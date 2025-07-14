@@ -1,7 +1,7 @@
-function footer() {
+function Footer() {
   return (
     <footer className="footer">
-      <div className="container">
+      <div className="social-icons">
         <img src="/facebook.png" alt="facebook" />
         <img src="/instagram.png" alt="instagram" />
         <img src="/twitter.png" alt="twitter" />
@@ -9,14 +9,14 @@ function footer() {
       </div>
 
       <div className="footer-links">
-        <a href="">Conditions of Use</a>
-        <a href="">Privacy & Policy</a>
-        <a href="">Press Room</a>
+        <a href="#">Conditions of Use</a>
+        <a href="#">Privacy & Policy</a>
+        <a href="#">Press Room</a>
       </div>
 
-      <span>&copy; 2021 Movix</span>
+      <span className="copyright">&copy; 2021 Movix</span>
     </footer>
   );
 }
 
-export default footer;
+export default Footer;

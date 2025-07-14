@@ -1,22 +1,28 @@
+  import {Link} from "react-router-dom"
+import PasswordInput from "../components/password"
+
  function Login(){
     return(
-        <>
+        <section className="container">
         <div className="logo-container">
             <img src="/moviex-logo.png" alt="Movix-logo" />
             <h1>Hi, Welcome</h1>
             <p>Please sign-in to your account and start your experience</p>
-            <div className="input-container">
-                <input type="text" placeholder="Full Name"/>
+             <div className="input-container">
                 <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
+                <PasswordInput />
             </div>
-            <button>Register</button>
+            <Link to="/home">
+                <button>LOGIN</button>
+                </Link>
             <div className="login-link">
-                <p>Already have an account?</p>
-                <a href="">Login</a>
+                <p>Don't have an account?</p>
+                <Link to="/">
+                <a href="">Register</a>
+                </Link>
             </div>
         </div>
-        </>
+        </section>
     )
 }
 
