@@ -89,3 +89,91 @@ h1, h2 {
     color: rgba(185, 28, 28, 1);
     margin-left: 5px;
 }
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .logo-container {
+        width: 380px;
+        padding: 40px 24px;
+    }
+    .input-container input,
+    .container button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo-container {
+        width: 320px;
+        padding: 36px 20px;
+    }
+    .logo-container img {
+        height: 70px;
+        width: 70px;
+    }
+    .logo-container p {
+        font-size: 13px;
+        text-align: center;
+    }
+    .input-container input,
+    .container button {
+        font-size: 14px;
+        height: 48px;
+        width: 100%;
+    }
+    .container button {
+        letter-spacing: 1.5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-container {
+        width: 90%;
+        padding: 28px 16px;
+    }
+    .logo-container img {
+        height: 60px;
+        width: 60px;
+    }
+    .input-container {
+        margin: 15px 0;
+    }
+    .input-container input,
+    .container button {
+        font-size: 14px;
+        padding: 0 10px;
+        width: 100%;
+    }
+    .container button {
+        font-size: 13px;
+        height: 45px;
+    }
+    .login-link {
+        flex-direction: column;
+        align-items: center;
+        font-size: 13px;
+    }
+    .login-link a {
+        margin-left: 0;
+        margin-top: 4px;
+    }
+}
+
+@media (max-width: 320px) {
+    .logo-container {
+        width: 90%;
+        padding: 24px 12px;
+    }
+    .logo-container img {
+        height: 50px;
+        width: 50px;
+    }
+    .input-container input,
+    .container button {
+        font-size: 13px;
+        height: 40px;
+    }
+    .container button {
+        letter-spacing: 1px;
+    }
+}

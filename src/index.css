@@ -219,6 +219,7 @@ nav input{
 .movie-section-wrapper .movie-cards .movie-card:nth-child(1) .card-top span {
   background-color: rgba(255, 255, 255, 0.9);
   opacity: 60%;
+
 }
 
 .like-btn {
@@ -234,8 +235,10 @@ nav input{
 /* Movie text details */
 .movie-info {
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   gap: 0.2rem;
+  height: 90px;
 }
 
 .movie-year {
@@ -586,7 +589,7 @@ font-weight: 500;
 }
 
 .footer-links a {
-  color: #aaa;
+  color: #000;
   text-decoration: none;
   transition: color 0.2s ease;
 }
@@ -616,9 +619,9 @@ font-weight: 500;
   }
 
   nav input {
-    width: 100%;
-    font-size: 14px;
-    display: none;
+    width: 80%;
+    font-size: 12px;
+
   }
 
   .profile {
@@ -687,12 +690,21 @@ font-weight: 500;
     overflow-x: auto;
   }
 
+  .exclusive-wrapper{
+    padding: 0 0px;
+    width: 100%;
+    overflow-x: auto;
+  }
+
   .movie-card,
   .single-card,
   .cast-card {
     width: 200px;
   }
 
+  .single-card {
+    width: 400px;
+  }
   .movie-thumbnail,
   .video-thumb,
   .cast-img {
